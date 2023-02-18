@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilos.css">
     <title>Index</title>
@@ -19,18 +19,18 @@
                     <h1>/EB/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIOS</a></li>
-                            <li><a href="#portafolio">PORTAFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
 
                     </nav>
 
                     <!--ICONOS DEL MENU RESPONSIVE-->
 
-                    <div id="icono-nav">
+                    <div id="icono-nav " onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                     <!--ICONOS DE LAS REDES SOCIALES-->
@@ -48,7 +48,8 @@
             <div class="presentacion">
                 <p class="bienvenidos">Bienvenidos</p>
                 <h2>Soy <span>Evelin Barrios</span> Desarrolladora Web</h2>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque esse sunt maxime!lorem5</p>
+                <p class="descripcion">Calificada y profesional con experiencia en desarrollo y diseño de sitios web. <br>
+                    Con atención al detalle y visión definida para diseño innovador.</p>
                 <a href="#portafolio">Ir a Portafolio</a>
 
 
@@ -69,11 +70,264 @@
             <p class="titulo-seccion">Sobre mi</p>
             <h2>Hola soy, <span>Evelin Barrios</span></h2>
             <h3>Desarrolladora Web</h3>
-            <p>Lorem ipsum dolor sitratione quam, harum optio ex iste quisquam quod impedit beatae expedita.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur on architecto provident expedita?</p>
-            <a href="#">Descargar CV</a>
+            <p>Con experiencia en HTML, Css & Javascript.</p>
+            <p>Realicé numerosos proyectos que implican desarrollo de front y backend.</p>
+            <a href="pdf/curriculum.pdf">Descargar CV</a>
         </div>
     </section>
+
+
+    <!--SECCION SERVICIOS-->
+
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Diseñamos tu pagina web con HTML, CSS & JAVASCRIPT</p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Posicionamiento SEO atraves de estructura Html</p>
+            </div>
+
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Adapta tu pagina a cualquier dispositivo conectado a internet</p>
+            </div>
+
+        </div>
+        <div class="fila">
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Diseños de Logo perzonalizado utilizando Canva como fuente </p>
+            </div>
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Agenda turnos a traves de la pagina web con el calendario</p>
+            </div>
+
+            <div class="servicios">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Javascript</li>
+
+                </ul>
+                <p>Arma tu tienda online y ofrece tus productos en catalogo.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION SKILL-->
+    
+    <section class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info"> 
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info"> 
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info"> 
+                <p><span class="lista"></span>Python</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="py" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <div class="info"> 
+                <p><span class="lista"></span>React</p>
+                <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra-progreso4"></div>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+
+    <section id="portafolio">
+        <h3 class="titulo-seccion"> MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto1.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto2.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+                    
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto3.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto4.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto5.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+                    
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="images/proyecto6.jpg" alt="">
+                <div class="info"> 
+                    <h4></h4>
+                    <p>Diseño Web</p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--SECCION CONTACTO-->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+            <div class="imagen-final">
+                <img src="images/Blanco.jpg" alt="" class="foto-final">
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <br>
+
+    <!--SECCION FOOTER-->
+
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+
+        <div class="redes"> 
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+
+    </footer>
+
+    <script src="js/portafolio.js"></script>
+    
     
 </body>
 </html>
